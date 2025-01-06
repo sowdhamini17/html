@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rowspan and Colspan Example</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      text-align: center;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rowspan and Colspan Example</h1>
+  <table>
+    <tr>
+      <th>Day</th>
+      <th>Time</th>
+      <th colspan="2">Subjects</th>
+    </tr>
+    <tr>
+      <td rowspan="2">Monday</td>
+      <td>9:00 AM</td>
+      <td>Math</td>
+      <td>English</td>
+    </tr>
+    <tr>
+      <td>11:00 AM</td>
+      <td colspan="2">Science</td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td>10:00 AM</td>
+      <td rowspan="2">History</td>
+      <td>Geography</td>
+    </tr>
+    <tr>
+      <td>2:00 PM</td>
+      <td>Arts</td>
+    </tr>
+  </table>
+</body>
+</html>

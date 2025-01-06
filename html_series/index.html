@@ -1,18 +1,259 @@
-<html>
-    <head>
+<!DOCTYPE html>
+   <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name= "author" content="dave gary">
+        <meta name="description" content="my html learning series">
+        <!-- <link rel="icon" href="" type=""> -->
+        <link rel="stylesheet" href="./style.css">
         <title>first html page</title>
-        <style>
-            html{
-                font-size: 22px;
-            }
-            body{
-                background-color: black;
-                color:whitesmoke;
-            }
-        </style>
+       
     </head>
     <body>
         <h1>hello world</h1>
-        <p>my first web page</p>
+        <p>world tour present..........</p>
+        <nav>
+            <li>
+                <a href="#cities">CITIES TO LOOK</a>
+            </li>
+            <li>
+                <a href="#todo">todo list</a>
+            </li>
+            <li>
+                <a href="#adv">activities</a>
+            </li>
+        </nav>
+        <hr>
+        <h2>Vietnam iternary </h2>
+        <p>
+           7-days plan Honai to Ho chi-min
+        </p>
+        <hr>
+        <br>
+    <section id="cities">
+        <h3>CITIES to visit</h3>
+       <ol>
+        <li>Hanoi</li>
+        <li>Ho Chi Minh City<em>(Saigon)</em></li>
+        <li>Hoi An</li>
+        <li>Da Nang</li>
+         <li>Hue</li>
+        <li> Ha Long City</li>
+        <li>Sapa</li>
+        <li>Nha Trang</li>
+        li>Phu Quoc</li>
+         </ol>
+    </section>                
+        <section id="todo">
+            <h3>Things To Do </h3>
+            <ul>
+            <li>..... Sail among the limestone karsts and emerald water</li>
+            <img src="island.png"  alt="bamam" title="bamakk" width="300px" height="300px" loading="lazy">
+            <li>.....temple of litreature</li>
+            <address>[58 Quốc Tử Giám Street, Văn Miếu Ward, <br>Đống Đa District, Hanoi, Vietnam]</address>
+            <br><br><li>.....visit the War Remnants Museum</li>
+            <li>.....explore the island's <strong>national park</strong></li>
+            <li>..... Hike through terraced rice fields</li> 
+            <li>..... lantern boating</li>
+            <img src="lantern.png" alt="lantern street veiw" title="annjdjj" loading="lazy">
+            </ul>
+        </section>
+        <hr>
+        <section id="adv">
+          <h3>Adventures</h3>
+          <dl>
+            <dt>1.trekking</dt>
+            <dd>bhgfjjkkbbnb,,,vyjyjm</dd>
+            <dt>2. canyoning</dt>
+            <dd>vjjjkn bvghjkk,,m</dd>
+            <dt>3. mountain biking in this highland city </dt>
+          </dl>
+        </section>
+ 
+         
+         <table>
+            <thead>
+                <th colspan="3"> veitnam iternary</th>
+                <tr>
+                    
+                    <th scope="col">
+                        day
+                    </th>
+                    <th scope="col">
+                        date
+                    </th>
+                    <th scope="col">
+                        activity
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">monday</th>
+                    <td datetime="date">08-01-2027</td>
+                    <td >kayaking</td>
+                </tr>
+                <tr>
+                    <th scope="row">tuesday</th>
+                    <td datetime="date">09-01-2027</td>
+                    <td>trek</td>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="2">wednesday</th>
+                    <td datetime="date" rowspan="2">10-01-2027</td>
+                    <td>city tour</td>
+                   <tr> <td>Museum visit</td> </tr>
+                </tr>
+                <tr>
+                    <th scope="row" >thursday</th>
+                    <td datetime="date">11-01-2027</td>
+                    <td>squba diving</td>
+                    <!-- <td>Museum visit</td> -->
+                </tr>
+                <tr>Museum visit</tr>
+             </tbody>
+           
+             
+            
+        </table>
+             <br>
+         <hr>
+         <br>
+         <form>
+            <caption>contact me @</caption>
+            <fieldset>
+                <legend>personal info</legend>
+            
+            <p>
+                <label id="email">email:</label>
+                <input type="email"  name="email" placeholder="email"  autofocus="on" required>
+               </p>
+            <p>
+            <label id="firntName">First Name:</label>
+            <input type="text"  name="firntName" placeholder="name" autocomplete="on" required>
+           </p>
+           <p>
+            <label id="lastName">last Name:</label>
+            <input type="text"  name="lastName" placeholder="name" autocomplete="on"  required>
+           </p>
+           <p>
+            <label id="password">Password:</label>
+            <input type="password"  name="password" placeholder="your secert"  required>
+           </p>
+           <p>
+            <label for="decade">Phone:</label>
+            <input type="tel" id="decade" name="lastName" placeholder="91-23456-97543" autocomplete="on"  
+            patter="[0-9]{2} [0-9]5 [0-9]5" required>
+           </p>
+           <p>
+            <label for="decade">Decade:</label>
+            <input type="number" id="decade" name="decade" 
+            value="1980"
+             max="1950" min="1930" step="10"
+             placeholder="" autocomplete="on"  
+             required>
+           </p>
+           <p>
+            <label for="coffee">your coffee</label>
+            <!-- <select id="coffee" name="coffee">
+                <optgroup label="coffee">
+                    <option value="c1">Regular coffee</option>
+                    <option value="c2">cold coffee</option>
+                </optgroup>
+                <optgroup label="expresso">
+                    <option value="c3">Latte</option>
+                    <option value="c4">Experesso</option>
+                </optgroup>
+                <optgroup label="ammms">
+                    <option value="c5">Americano</option>
+                    <option value="c6">caramel coffee</option>
+                </optgroup>
+            </select> -->
+            <input type="text" name="coffee" id="coffee" list="coffee-list">
+            <datalist id="coffee-list">
+                <option value="mocha"></option>
+                <option value="expresso"></option>
+                <option value="americano"></option>
+                <option value="cappoccino"></option>
+                <option value="latte"></option>
+
+            </datalist>
+           </p>
+        </fieldset>
+        <fieldset>
+            <legend>food preferences</legend>
+            <p>
+                <input type ="radio" name="food" id="torthia">
+            <label for="torthia">TORTHIA</label>
+            </p>
+            <p>
+                <input type ="radio" name="food" id="nachos">
+                <label for="nachos">Nachos</label>
+            </p>
+            <p>
+                <input type ="radio" name="food" id="tachos">
+                <label for="tachos">Tachos</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>food preferences</legend>
+            <p>
+                <input type ="radio" name="food" id="torthia">
+            <label for="torthia">TORTHIA</label>
+            </p>
+            <p>
+                <input type ="radio" name="food" id="nachos">
+                <label for="nachos">Nachos</label>
+            </p>
+            <p>
+                <input type ="radio" name="food" id="tachos">
+                <label for="tachos">Tachos</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>food preferences</legend>
+            <p>
+                <input type ="radio" name="food" id="torthia">
+            <label for="torthia">TORTHIA</label>
+            </p>
+            <p>
+                <input type ="radio" name="food" id="nachos">
+                <label for="nachos">Nachos</label>
+            </p>
+            <p>
+                <input type ="radio" name="food" id="tachos">
+                <label for="tachos">Tachos</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>your pets</legend>
+            <p>
+                <input type ="checkbox" name="pets" id="HAMSTER">
+            <label for="HAMSTER">HAMSTER</label>
+            </p>
+            <p>
+                <input type ="checkbox" name="pets" id="CAT">
+                <label for="CAT">CAT</label>
+            </p>
+            <p>
+                <input type ="checkbox" name="pets" id="dog">
+                <label for="dog">DOG</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend> your message</legend>
+            <textarea  id="message" cols="50" rows="10" placeholder="type your message here..."></textarea>
+            <label for="message"></label>
+        </fieldset>
+        <button type="submit">SUBMIT</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">post</button>
+        <button type="reset">reset</button>
+        </form>
+         <hr>
+         <a href="./table.html">table example</a> 
+         <footer>
+            &lt; &lt;copyright@&copy;:<a href="./about.html">Dave gary</a> &gt;&gt;
+            <a href=""#></a>
+         </footer>
     </body>
 </html>
